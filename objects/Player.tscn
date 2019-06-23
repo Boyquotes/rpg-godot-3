@@ -1,0 +1,162 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://bin/player.gdns" type="Script" id=1]
+[ext_resource path="res://sprites/chara1.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=6]
+resource_name = "idle_east"
+loop = true
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 7 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "idle_north"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 10 ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "idle_south"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 1 ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "idle_west"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 4 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "walk_east"
+loop = true
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.001, 0.25, 0.5, 0.75 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 6, 7, 8, 7 ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "walk_north"
+loop = true
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 9, 10, 11, 10 ]
+}
+
+[sub_resource type="Animation" id=1]
+resource_name = "walk_south"
+loop = true
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 2, 1, 0, 1 ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "walk_west"
+loop = true
+step = 0.25
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25, 0.5, 0.75 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 4, 5, 4 ]
+}
+
+[node name="Player" type="Node2D"]
+position = Vector2( 1, 2 )
+script = ExtResource( 1 )
+speed = 200
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+vframes = 4
+hframes = 3
+frame = 1
+region_enabled = true
+region_rect = Rect2( 0, 0, 156, 300 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+anims/idle_east = SubResource( 6 )
+anims/idle_north = SubResource( 8 )
+anims/idle_south = SubResource( 5 )
+anims/idle_west = SubResource( 7 )
+anims/walk_east = SubResource( 2 )
+anims/walk_north = SubResource( 3 )
+anims/walk_south = SubResource( 1 )
+anims/walk_west = SubResource( 4 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
