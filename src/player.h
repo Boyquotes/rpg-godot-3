@@ -11,12 +11,14 @@
 #include <Area2D.hpp>
 #include <algorithm>
 #include <limits>
+#include <CollisionShape2D.hpp>
+#include <KinematicBody2D.hpp>
 
 namespace godot {
   enum class DIRECTION { NORTH, SOUTH, EAST, WEST };
 
-  class Player : public Node2D {
-    GODOT_CLASS(Player, Node2D)
+  class Player : public KinematicBody2D {
+    GODOT_CLASS(Player, KinematicBody2D)
 
   public:
     int speed;
@@ -33,6 +35,7 @@ namespace godot {
     Sprite *sprite;
     AnimationPlayer *animation;
     Vector2 screen_size;
+    CollisionShape2D *collider;
     DIRECTION direction;
 
   };

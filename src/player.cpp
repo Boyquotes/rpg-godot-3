@@ -30,6 +30,7 @@ void Player::_ready() {
   sprite = cast_to<Sprite>(get_node("Sprite"));
   animation = cast_to<AnimationPlayer>(sprite->get_node("AnimationPlayer"));
   screen_size = get_viewport_rect().get_size();
+  collider = cast_to<CollisionShape2D>(get_node("CollisionShape2D"));
 
   String screen = String("Screen size is x: {0} y: {1}")
     .format(Array::make(screen_size.x, screen_size.y));
@@ -68,11 +69,13 @@ void Player::_process(float delta) {
   }
 
   Vector2 position = this->get_position();
-  position += velocity * delta;
+  //  position += velocity * delta;
+  position += velocity;
   //  position.x = std::clamp(position.x, 0.0f, std::numeric_limits<float>::max());
   //  position.y = std::clamp(position.y, 0.0f, std::numeric_limits<float>::max());
 
-  this->set_position(position);
+  //this->set_position(position);
+  move_and_slide(velocity);
 
   if (velocity.x > 0) {
     animation->play("walk_east");
