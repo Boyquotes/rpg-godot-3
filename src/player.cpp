@@ -2,7 +2,6 @@
 
 using namespace godot;
 
-
 void Player::_register_methods() {  
   register_method("_process", &Player::_process);
   register_method("_ready", &Player::_ready);

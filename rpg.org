@@ -1,0 +1,40 @@
+#+TITLE: RPG - GODOT
+
+* Design
+** RPG - JRPG-like
+*** Stats
+**** Fame
+*** 
+** NPCs
+*** Schedule
+*** Speech
+** Branching Storyline
+** Systems
+*** Fame
+*** Story
+*** Factions
+*** Inventory?
+**** Limited. Not endless. I hated this though in most of my games. 
+*** NPC Schedule
+*** Speech
+
+* Story
+** Chapter 1
+*** One poor character, one rich/nobel character
+*** Rebellion coming. Evil looking. Not necessarily. 
+*** Rich is prince / son of ruler. Must interact with nobility. Must defend the castle
+*** Po is the peasant. Son of a nobody. Maybe not even a whole family. Hmm. Father died in war / mother died from sickness. 
+*** Rebellion comes. Attacks.
+*** Choices
+**** Closing the gate
+**** Joining the rebels
+**** Sacrificing yourself. 
+* TODO
+** Intro
+** Title Screen
+** NPC
+*** Picking sprites
+*** Movement
+*** Dialog
+** Combat
+*** Enemy
