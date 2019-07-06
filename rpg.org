@@ -4,6 +4,10 @@
 ** RPG - JRPG-like
 *** Stats
 **** Fame
+**** Strength
+**** Agility
+**** Endurance
+**** Magic
 *** 
 ** NPCs
 *** Schedule
@@ -17,21 +21,49 @@
 **** Limited. Not endless. I hated this though in most of my games. 
 *** NPC Schedule
 *** Speech
+*** Companions
 
 * Story
 ** Chapter 1
-*** One poor character, one rich/nobel character
-*** Rebellion coming. Evil looking. Not necessarily. 
-*** Rich is prince / son of ruler. Must interact with nobility. Must defend the castle
-*** Po is the peasant. Son of a nobody. Maybe not even a whole family. Hmm. Father died in war / mother died from sickness. 
-*** Rebellion comes. Attacks.
-*** Choices
-**** Closing the gate
-**** Joining the rebels
-**** Sacrificing yourself. 
+*** Overall
+**** One poor character, one rich/nobel character
+**** Rebellion coming. Evil looking. Not necessarily. 
+**** Rich is prince / son of ruler. Must interact with nobility. Must defend the castle
+**** Po is the peasant. Son of a nobody. Maybe not even a whole family. Hmm. Father died in war / mother died from sickness. 
+**** Rebellion comes. Attacks.
+**** Magic User and Non Magic users. Magic users are upper class.
+**** Magic is an illusion, bending reality. Rebellion leader has learned this and mastered it to make magic useless and use it himself.
+**** Eve is rebel who will attack Po when he comes back from hunting. Can be spared. This will matter. 
+**** Choices
+***** Closing the gate
+***** Joining the rebels
+***** Killing rebel character
+***** Sacrificing yourself. 
+***** Pick character
+*** NPC
+**** Blacksmith / Inventory
+**** Apothecary / Potions
+**** Clothing Store
+**** Food
+*** Rich
+**** Manning the castle. 
+**** Need to introduce inventory. Also chores? Maybe. Much larger supply of money.
+**** Has a love / or deeply cares for family. Need to build up these characters. Companion. Bring along on quests.
+*** Po
+**** Wakes up. Sleeping at home.
+**** Told to do chores. 
+**** Need to build up relationship with other characters in Po's life. Should be fun / interesting. Companions. Bring along on quests.
+***** Neighbors and family.
+***** There is a upper class man who is particularly pretentious. Friends want to prank him somehow. 
 * TODO
 ** Intro
 ** Title Screen
+** Game Manager
+*** Manages Music
+*** Camera
+*** Random Number Generator
+*** Time
+*** State of game - state of choices
 ** NPC
 *** Picking sprites
 *** Movement
