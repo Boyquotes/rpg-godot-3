@@ -16,6 +16,7 @@
 #include "player.h"
 #include <random>
 #include <algorithm>
+#include "npc_manager.h"
 
 namespace godot {
   //  enum class DIRECTION { NORTH, SOUTH, EAST, WEST };
@@ -26,6 +27,7 @@ namespace godot {
 
   public:
     int speed;
+    NPCManager *manager;
 
 
     NPC();
@@ -45,6 +47,8 @@ namespace godot {
 
     const static unsigned int HORIZONTAL_SHEET_SIZE = 156;
     const static unsigned int VERTICAL_SHEET_SIZE = 290;
+    const static unsigned int HORIZONTAL_SPRITE_COUNT = 4;
+    const static unsigned int VERTICAL_SPRITE_COUNT = 2;
   };
 
 }

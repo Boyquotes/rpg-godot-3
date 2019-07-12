@@ -33,7 +33,8 @@
 **** Rebellion comes. Attacks.
 **** Magic User and Non Magic users. Magic users are upper class.
 **** Magic is an illusion, bending reality. Rebellion leader has learned this and mastered it to make magic useless and use it himself.
-**** Eve is rebel who will attack Po when he comes back from hunting. Can be spared. This will matter. 
+**** Power comes from belief in power
+**** Eve is rebel who will attack Po when he comes back from hunting. Can be spared. This will matter.
 **** Choices
 ***** Closing the gate
 ***** Joining the rebels
@@ -54,7 +55,12 @@
 **** Told to do chores. 
 **** Need to build up relationship with other characters in Po's life. Should be fun / interesting. Companions. Bring along on quests.
 ***** Neighbors and family.
-***** There is a upper class man who is particularly pretentious. Friends want to prank him somehow. 
+***** There is a upper class man who is particularly pretentious. Friends want to prank him somehow. Is he magic user or not?
+*** Rebel Leader - Cifer
+**** Talks to player. Player can join them.
+**** Sees conditions to the south. The desert. 
+**** Player can still disagree with Cifer on violence and use. May result in a betrayal and infighting. 
+     
 * TODO
 ** Intro
 ** Title Screen
@@ -66,7 +72,21 @@
 *** State of game - state of choices
 ** NPC
 *** Picking sprites
+**** Can be random or chosen.
+**** What about choosing randomly from a subset?
 *** Movement
 *** Dialog
+*** Schedule
 ** Combat
 *** Enemy
+** HUD
+*** Controls on bottom, viewport on top. Emulate gameboy feel. Use bottom half of screen for dialogue choices and controls.
+** World
+*** Bridge market
+*** Castle
+*** Outskirts
+*** Forrest
+** Interiors
+*** Po's home
+*** Castle
+*** Homes

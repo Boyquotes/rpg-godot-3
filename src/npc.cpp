@@ -26,6 +26,7 @@ void NPC::_init() {
 
 void NPC::_ready() {
 
+  manager = cast_to<NPCManager>(get_parent());
   Godot::print("In ready!");
   sprite = cast_to<Sprite>(get_node("Sprite"));
   animation = cast_to<AnimationPlayer>(sprite->get_node("AnimationPlayer"));
@@ -43,6 +44,13 @@ void NPC::_ready() {
   Godot::print(String("Sprite region size is x: {0} y {1}").format(Array::make(region_rect_size.x, region_rect_size.y)));
   Godot::print(String("Sprite region position is x: {0} y {1}").format(Array::make(region_rect_position.x, region_rect_position.y)));
 
+  int random_x = manager->get_random_int(0, HORIZONTAL_SPRITE_COUNT - 1);
+  int random_y = manager->get_random_int(0, VERTICAL_SPRITE_COUNT - 1);
+
+  Godot::print(String("Random offsets are is x: {0} y {1}").format(Array::make(random_x, random_y)));
+
+  Vector2 new_rect_position {(float) HORIZONTAL_SHEET_SIZE * random_x, (float) VERTICAL_SHEET_SIZE * random_y};
+  sprite->set_region_rect(Rect2 {new_rect_position, region_rect_size});
 
   if (animation == nullptr) {
     Godot::print("animation is null");

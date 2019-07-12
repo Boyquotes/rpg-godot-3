@@ -1,0 +1,8 @@
+[gd_resource type="NativeScript" load_steps=2 format=2]
+
+[ext_resource path="res://bin/npc_manager.gdnlib" type="GDNativeLibrary" id=1]
+
+[resource]
+resource_name = "npc_manager"
+class_name = "NPCManager"
+library = ExtResource( 1 )
